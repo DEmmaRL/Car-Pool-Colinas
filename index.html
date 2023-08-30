@@ -7,16 +7,15 @@
 
 <script>
     function redirectToStoreOrFacebook() {
-         // Abrir tu página de Facebook por defecto mientras no esté pública la app
-         window.location.href = 'https://www.facebook.com/CarPoolColinas/';
+        
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
         // Si el usuario está en un dispositivo Android
-        if (/android/i.test(userAgent)) {
+        if ( false && /android/i.test(userAgent)) {
             window.location.href = 'https://play.google.com/store/apps/details?id=com.ubercab&hl=en';
         }
         // Si el usuario está en un dispositivo iOS
-        else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        else if (false && /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
             window.location.href = 'https://apps.apple.com/us/app/uber/id368677368';
         }
         // Si el usuario no está en un dispositivo Android o iOS
